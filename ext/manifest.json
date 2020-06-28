@@ -28,8 +28,7 @@
     "cookies",
     "notifications",
     "tabs",
-    "geolocation",
-    "https://portal.drizly.com/admin/orders?as=Map&scope=active"
+    "geolocation"
   ],
   "omnibox": {
     "keyword": "extensionizr"
@@ -37,9 +36,11 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://www.google.com/*",
+        "https://portal.drizly.com/*"
       ],
       "js": [
+        "js/jquery/jquery.min.js",
         "src/inject/inject.js"
       ]
     }
