@@ -1,5 +1,6 @@
 # paradise_routes
 
-- calculates time of arrival to store after delivery and what the best course of action is with the next deliveries such as:
+- Calculates the best course of action with the next deliveries, given the time in minutes each driver will take to get back to the store, such as:
     - Which deliveries are closest and how long to travel to each delivery, complete them, and come back to the store
-    - Best done as a chrome extension, should communicate with the template app below which is going to be continually streaming its location
+    - Best done as a chrome extension
+        - inputs in popup include how many drivers there are, and how far each of them are from the store
