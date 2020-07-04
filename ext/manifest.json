@@ -23,6 +23,7 @@
     "default_popup": "src/page_action/page_action.html"
   },
   "permissions": [
+    "https://maps.googleapis.com/maps/api/distancematrix/*",
     "clipboardRead",
     "contentSettings",
     "cookies",
