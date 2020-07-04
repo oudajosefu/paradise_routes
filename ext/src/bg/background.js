@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     sendResponse({message: 'Received!'});
 
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${encodeURI('722 W Southern Ave, Phoenix, AZ 85041')}&destinations=${encodeURI(orders[0].address)}&key=AIzaSyCPKHBXKwYOzVPcv7S9rPU-SUlgvfeivjQ`, true);
+    xhr.open("GET", `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${encodeURI('STORE ADDRESS')}&destinations=${encodeURI(orders[0].address)}&key=MY_API_KEY`, true);
     xhr.onreadystatechange = () => {
       if (xhr.readyState == 4) {
         let resp = JSON.parse(xhr.responseText);
